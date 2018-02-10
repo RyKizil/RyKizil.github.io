@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myHeader {
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    height: 100vh;
+    display: inline-block;
+    background-image: url('img/intro-bg.jpg');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+	background-color: #e5e5e5;
+	/*z-index: -1;*/
+}
+.center {
+    margin-top: 15%;
+}
+
+.center.post {
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: #555;
+}
+.name {
+    font-size: 6.6rem;
+    font-weight: 600;
+    color: #333333;
+    animation: tracking-in-expand 3.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.descr {
+    font-size: 2rem;
+    font-weight: 400;
+    animation: tracking-in-expand 3.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.myBtn {
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .9;
+}
+.myBtn:hover {
+    opacity: 1;
+    background: #333333;
+    color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    transition: .6s;
+    transform: scale(1.1);
+}
+.myBtn {
+    display: inline-block;
+    color: #333333;
+	border-radius: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: transparent;
+    border: 1px solid #333333;
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+   /*transition: ease-in .4s;*/
+   animation: scale-in-center 3.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+    
+hr {
+    width: 7rem;
+}
+
+.myNavbar {
+    margin-top: 0;
+    background-color: #ECECEC;
+    width: 100%;
+}
+
+.myNav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 2px solid white;
+}
+
+li a {
+    font-size: 1.6rem;
+    margin: 0 6rem;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    color: #333;
+    display: inline-block;
+    padding: 1rem 2rem;
+    transition: .4s ease-in-out;
+}
+
+li {
+    margin: 2rem 1rem;
+}
+
+li a:hover {
+    transform: scale(1.5);
+}
+
+.aboutMe h2, {
+    font-size: 3rem;
+    color: #555;
+}
+.material-icons {
+    display: none;
+    color: #808389;
+}
+
+
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.story {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #808389;
+}
+
+.last {
+    margin-top: 4.8rem;
+   
+}
+
+.portfolio {
+    background-color: #ECECEC;
+    width: 100%;
+}
+
+.portfolio h2{
+    font-size: 3rem;
+    color: #555;
+    padding-top: 12rem;
+}
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    
+}
+
+.portfolio-sub {
+    font-size: 1.4rem;
+    border: 1px solid #777;
+    color: #555;
+    padding: .8rem 2rem;
+    margin: 1rem 1rem;
+    animation: none;
+}
+
+.portfolio-sub:hover {
+    background-color: black;
+    color: #fff;
+}
+.portfolio-sub.first:active {
+    background-color: black;
+    color: #fff;
+}
+
+#porto {
+    transition: 5s ease-out;
+}
+.screen-on-small {
+    display: none;
+}
+.contact-me-btn {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.myMail {
+    position: relative;
+}
+i.large.material-icons{
+    position: absolute;
+    right: -6rem;
+    top: 0;
+}
+
+footer {
+    background-color: #ECECEC;
+    width: 100%;   
+    display: inline-block;
+}
+footer p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+@media screen and (max-width: 768px){
+    .myNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .material-icons{
+        position: absolute;
+        top: 1.7rem;
+        right: 2rem;
+        display: inline;
+    }
+    .material-icons:hover {
+        cursor: pointer;
+    }
+
+    div.center{
+        margin-top: 25%;
+    }
+    /*.hide {
+        display: inline;
+    }*/
+}
+
+
+@media screen and (max-width: 480px) {
+   
+    div.center{
+        margin-top: 50%;
+    }
+
+    .story {
+        display: block;
+        margin-top: 4rem;
+    }
+    .image-text{
+        display: none;
+    }
+    .for-margin-top {
+        display: none;
+    }
+
+    .screen-on-small {
+       display: block;
+       margin-top: -13rem;
+       
+    }
+    h2.center.post{
+        padding-bottom: 1.6rem;
+    }
+
+}
+
