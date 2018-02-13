@@ -32,23 +32,32 @@ $(document).ready(function() {
     );
   });
   $(".learn").click(function(e) {
-    e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $(".aboutMe").offset().top
       },
       1500
     );
+    e.preventDefault();
   });
 
   $(".toPorto").click(function(e) {
-    e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $("#porto").offset().top
       },
       1500
     );
+    e.preventDefault();
+  });
+  $(".toContact").click(function(e) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".contact-me").offset().top
+      },
+      1500
+    );
+    e.preventDefault();
   });
 
   $(".material-icons").on("click", function() {
@@ -58,16 +67,10 @@ $(document).ready(function() {
   $(window).on("resize", function() {
     if ($(window).width() > 768) {
       $(".myNav li").show();
-    }
-    else $(".myNav li").hide();
-    
+    } else $(".myNav li").hide();
   });
-  
-
 
   window.sr = ScrollReveal({ reset: false });
-  sr.reveal('.post', { duration: 2000 });
-  sr.reveal('.story', {duration: 2500});
-
-
+  sr.reveal(".post", { duration: 2000 });
+  sr.reveal(".story", { duration: 2500 });
 });
