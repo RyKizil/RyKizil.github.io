@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  particlesJS.load("particles-js", "assets/particles.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
   $(".carousel").carousel(); //materialize.js function for moving gallery in my portfolio
 
   //making navbar sticky after scrolldown
