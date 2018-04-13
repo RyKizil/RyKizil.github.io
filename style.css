@@ -20,7 +20,7 @@ body {
   height: 104vh;
   display: inline-block;
   /*background-image: url("img/intro-bg.jpg");*/
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #3a6186, #89253e);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body {
   margin-top: 13rem;
   margin-bottom: 3rem;
   font-size: 3rem;
-  color: #22BE87;
+  color: #604463;
 }
 .name {
   font-size: 6.6rem;
@@ -86,7 +86,7 @@ hr {
 
 .myNavbar {
   margin-top: 0;
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #3a6186, #89253e);
   width: 100%;
 }
 
@@ -147,7 +147,7 @@ li a:hover {
 }
 
 .portfolio {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #3a6186, #89253e);
   width: 100%;
 }
 
@@ -206,7 +206,7 @@ i.large.material-icons {
 }
 
 footer {
-  background-color: #22BE87;
+  background-color: #604463;
   width: 100%;
   display: inline-block;
 }
@@ -227,7 +227,7 @@ footer p {
 
 h2.center.post.touch {
   margin-top: 12rem;
-  color: #22BE87;
+  color: #604463;
 }
 
 .center.post.portoo {
@@ -242,7 +242,7 @@ h2.center.post.touch {
  }
 .myBtnSecondColor {
  border: none;
- background-color: #22BE87;
+ background-color: #604463;
  border-radius: 5px;
  color: #ffffff;
  cursor: pointer;
@@ -284,13 +284,13 @@ h2.center.post.touch {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  border: 5px solid #22BE87;
+  border: 5px solid #604463;
   content: '';
   border-radius: inherit;
 }
 .myBtnSecondColor:hover,
 .myBtnSecondColor.hover {
-  background-color: #22BE87;
+  background-color: #604463;
   color: #ffffff;
 }
 .myBtnSecondColor:hover:before,
